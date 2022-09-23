@@ -6,7 +6,7 @@ const Field = (props) => {
     <section className='field' style={{ backgroundColor: props.lightColor }}>
       <h3 style={{ borderColor: props.mainColor }}>{props.name}</h3>
       <div className='companies'>
-        {props.companies.map(company => <Company name={company.name} companyName={company.companyName} image={company.image} />)}
+        {props.companies.map(company => <Company key={company.name} name={company.name} companyName={company.companyName} image={company.image} />)}
       </div>
     </section>
   )

@@ -18,7 +18,8 @@ const Form = (props) => {
       name,
       companyName,
       email,
-      image
+      image,
+      field
     })
   }
 
@@ -57,7 +58,6 @@ const Form = (props) => {
           presence={true}
           label="Field"
           itens={props.fields}
-          placeholder="Choose one field"
           result={field}
           whenChanged={result => setField(result)}
         />

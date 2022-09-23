@@ -42,7 +42,9 @@ function App() {
 
   const whenNewCompany = (company) => {
     setCompanies([...companies, company])
+    console.log(companies)
   }
+
 
   return (
     <div className="App">
