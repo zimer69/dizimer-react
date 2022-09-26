@@ -1,0 +1,38 @@
+.footer {
+  background: #595353;
+  color: white;
+  padding: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer ul li {
+  display: inline-block;
+  margin-right: 32px;
+}
+
+.footer ul li:last-child {
+  margin-right: 0;
+}
+
+.footer p {
+  font-size: 18px;
+}
+
+
+.footer ul li a {
+  color:white;
+  font-size: 30px;
+  opacity: 0.6;
+  transition: 0.4s;
+}
+
+.footer ul li a:hover {
+  opacity: 1;
+}
+
+
+.footer ul li:focus {
+  color: white;
+}

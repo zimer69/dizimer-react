@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Banner from './components/Banner';
 import Field from './components/Field';
+import Footer from './components/Footer';
 import Form from './components/Form';
 
 function App() {
@@ -42,7 +43,6 @@ function App() {
 
   const whenNewCompany = (company) => {
     setCompanies([...companies, company])
-    console.log(companies)
   }
 
 
@@ -58,6 +58,7 @@ function App() {
                               lightColor={field.lightColor}
                               companies={companies.filter(company => company.field === field.name)}
                             />)}
+      <Footer />
     </div>
   );
 }

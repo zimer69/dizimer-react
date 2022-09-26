@@ -3,10 +3,10 @@ import './Field.css'
 
 const Field = (props) => {
   return (
-    <section className='field' style={{ backgroundColor: props.lightColor }}>
+    (props.companies.length > 0) && <section className='field' style={{ backgroundColor: props.lightColor }}>
       <h3 style={{ borderColor: props.mainColor }}>{props.name}</h3>
       <div className='companies'>
-        {props.companies.map(company => <Company key={company.name} name={company.name} companyName={company.companyName} image={company.image} />)}
+        {props.companies.map(company => <Company mainColor={props.mainColor} key={company.companyName} name={company.name} companyName={company.companyName} image={company.image} />)}
       </div>
     </section>
   )

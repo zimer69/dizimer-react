@@ -1,9 +1,9 @@
 import './Company.css'
 
-const Company = ({ name, companyName, image }) => {
+const Company = ({ name, companyName, image, mainColor }) => {
   return (
     <div className='company'>
-      <div className='header'>
+      <div className='header' style={{ backgroundColor: mainColor }}>
         <img src={image} alt={companyName}/>
       </div>
       <div className='footer'>

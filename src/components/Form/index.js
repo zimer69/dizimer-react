@@ -21,6 +21,11 @@ const Form = (props) => {
       image,
       field
     })
+    setName('')
+    setCompanyName('')
+    setEmail('')
+    setImage('')
+    setField('')
   }
 
   return (
@@ -49,6 +54,7 @@ const Form = (props) => {
           whenChanged={result => setEmail(result)}
         />
         <TextField
+          presence={true}
           label="Image"
           placeholder="Insert the company's image url"
           result={image}
