@@ -47,6 +47,7 @@ p {
   transition: background 0.3s ease;
   max-width: fit-content;
   font-weight: 600;
+  cursor: pointer;
 }
 
 .btn-flat:hover {
