@@ -50,7 +50,7 @@ function App() {
     <div className="App">
       <Banner />
       <Form fields={fields.map(field => field.name)} whenSubmited={company => whenNewCompany(company)}/>
-
+      <h1 style={{ textAlign: 'center', color: 'black', margin: '50px 0' }}>Clients:</h1>
       {fields.map(field => <Field
                               key={field.name}
                               name={field.name}

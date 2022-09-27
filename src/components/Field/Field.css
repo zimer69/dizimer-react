@@ -1,6 +1,9 @@
 .field {
   text-align: center;
   padding: 32px;
+  margin: 50px;
+  border-radius: 20px;
+  box-shadow: 8px 8px 16px rgba(0,0,0,0.08);
 }
 
 .field h3 {
@@ -13,6 +16,7 @@
 .field .companies {
   display: flex;
   justify-content: center;
-  margin-top: 32px;
+  margin: 32px 0;
+  gap: 50px;
   flex-wrap: wrap;
 }
